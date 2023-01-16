@@ -1,0 +1,5 @@
+CREATE TABLE employee_table(
+	id INT NOT NULL AUTO_InCREMENT PRIMARY KEY,
+    	name VARCHAR(255) NOT NULL
+);
+    
