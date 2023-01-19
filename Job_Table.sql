@@ -40,5 +40,5 @@ SELECT MAX(salary) FROM employee WHERE salary < (SELECT MAX(salary) FROM employe
 3. Get all job name and department name in single query
 
 SELECT j.name FROM job j
-UNION 
+UNION
 SELECT d.name FROM department d;
