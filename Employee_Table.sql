@@ -18,15 +18,15 @@ CREATE TABLE employee_salary (
     	salary DOUBLE NOT NULL,
     	DATE DATE NOT NULL,
     	fk_employee_id INT NOT NULL,
-    	FOREIGN KEY ( fk_employee_id ) REFERENCES employee(id)
+    	FOREIGN KEY (fk_employee_id) REFERENCES employee(id)
 );
 
 CREATE TABLE employee_hobby ( 
 	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	fk_employee_id INT,
 	fk_hobby_id INT,
-	FOREIGN KEY ( fk_employee_id ) REFERENCES employee(id),
-	FOREIGN KEY ( fk_hobby_id ) REFERENCES hobby(id)
+	FOREIGN KEY (fk_employee_id) REFERENCES employee(id),
+	FOREIGN KEY (fk_hobby_id) REFERENCES hobby(id)
 );
     
 
