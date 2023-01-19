@@ -155,7 +155,6 @@ SELECT CONCAT (first_name, " ", last_name) AS employee_name, SUM (es.salary) AS 
 (
 SELECT h.name FROM  hobby h 
 INNER JOIN employee_hobby eh ON eh.fk_hobby_id = h.id
-WHERE eh.fk_employee_id = e.id 
 )
 AS hobby_name
 FROM employee e
